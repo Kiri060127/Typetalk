@@ -93,7 +93,7 @@ export default function SquarePage() {
 
   async function toggleLike(postId: string) {
     try {
-      const response = await fetch(`/api/posts/${postId}/like`, {
+      const response = await fetch(`/api/posts/id/like?postId=${postId}`, {
         method: 'POST',
       })
 
@@ -121,7 +121,7 @@ export default function SquarePage() {
     if (!content?.trim()) return
 
     try {
-      const response = await fetch(`/api/posts/${postId}/comments`, {
+      const response = await fetch(`/api/posts/id/comments?postId=${postId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content }),
