@@ -1,4 +1,4 @@
-# TypeTalk
+# TypeTalk https://typetalk-production.up.railway.app/discover
 
 这是一款基于 MBTI 性格类型的社交平台，帮助用户发现性格相投的朋友，探索不同人格类型的奇妙世界。
 
